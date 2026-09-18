@@ -1,0 +1,11 @@
+node_modules/
+out/
+.npm-cache/
+build/
+.DS_Store
+
+# 背景音乐有版权，不进仓库。
+# 想自己渲染的话，把音乐文件放到项目根目录（文件名要和 src 里引用的对上）。
+*.mp3
+*.m4a
+*.wav
