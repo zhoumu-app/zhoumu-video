@@ -16,6 +16,9 @@ import { Update14 } from "./Update14";
 import { Update14Video, UPDATE14_TOTAL } from "./Update14Video";
 import { Cover14 } from "./Cover14";
 import { Update15 } from "./Update15";
+import { AndroidLaunch } from "./AndroidLaunch";
+import { AndroidVideo, ANDROID_TOTAL } from "./AndroidVideo";
+import { AndroidCover } from "./AndroidCover";
 import { Avatar } from "./Avatar";
 import { Intro2, TOTAL2 } from "./intro2/Intro2";
 import { TOTAL as BTS_TOTAL } from "./bts/theme";
@@ -94,6 +97,33 @@ export const RemotionRoot: React.FC = () => {
         fps={FPS}
         width={1920}
         height={1080}
+      />
+      {/* Android 版 B 站封面 */}
+      <Composition
+        id="AndroidCover"
+        component={AndroidCover}
+        durationInFrames={1}
+        fps={FPS}
+        width={1146}
+        height={717}
+      />
+      {/* Android 版更新视频：1920×1080，2 分 03 秒 */}
+      <Composition
+        id="AndroidVideo"
+        component={AndroidVideo}
+        durationInFrames={ANDROID_TOTAL}
+        fps={FPS}
+        width={1920}
+        height={1080}
+      />
+      {/* Android 版发布公告图 */}
+      <Composition
+        id="AndroidLaunch"
+        component={AndroidLaunch}
+        durationInFrames={1}
+        fps={FPS}
+        width={1080}
+        height={1360}
       />
       {/* v1.5 更新公告图 */}
       <Composition
